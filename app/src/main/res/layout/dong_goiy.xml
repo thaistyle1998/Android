@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/framelayoutgoiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageviewgoiy"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+    </FrameLayout>
+    <TextView
+        android:layout_marginTop="2dp"
+        android:elevation="5dp"
+        android:id="@+id/txtyeuthich"
+        android:textColor="#FDFDFC"
+        android:background="@android:color/holo_red_dark"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yêu Thích"/>
+    <TextView
+android:layout_marginTop="2dp"
+        android:textSize="13sp"
+        android:id="@+id/txtgiamgia"
+        android:textColor="#FAFAF7"
+        android:gravity="center"
+        android:maxWidth="50dp"
+        android:background="@drawable/custom_draw_sale"
+        android:layout_marginLeft="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="43% Giảm"
+        android:layout_toRightOf="@id/txtyeuthich"/>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:padding="3dp"
+        android:id="@+id/txttengoiy"
+        android:textSize="15sp"
+        android:textColor="#0C0C0C"
+        android:elevation="5dp"
+        android:maxWidth="200dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="JunoHeyHeyka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/framelayoutgoiy"/>
+       <TextView
+           android:layout_marginTop="3dp"
+           android:layout_marginLeft="2dp"
+           android:padding="3dp"
+           android:id="@+id/txtgia"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/txttengoiy"
+           android:text="199.000Đ"
+           android:textStyle="bold"
+           android:textColor="@android:color/holo_orange_dark"/>
+</RelativeLayout>

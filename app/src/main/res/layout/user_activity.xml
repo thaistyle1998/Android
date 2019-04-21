@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.example.myapplication.ViewPagerChange.ScrollViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/viewpageruser"></com.example.myapplication.ViewPagerChange.ScrollViewPager>
+        <android.support.design.widget.TabLayout
+            app:tabIndicator="@android:color/background_light"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@android:color/holo_green_dark"
+            app:tabTextColor="@android:color/background_dark"
+            app:tabIndicatorHeight="2dp"
+            android:id="@+id/taplayoutuser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+        </android.support.design.widget.TabLayout>
+
+</LinearLayout>

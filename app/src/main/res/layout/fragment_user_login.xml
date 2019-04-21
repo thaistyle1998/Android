@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+     android:id="@+id/fragmentcontext"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@android:color/holo_orange_dark"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imagechinhsuatt"
+                android:scaleType="fitXY"
+                android:src="@drawable/star"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:paddingLeft="3dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/setting"
+               android:layout_marginLeft="210dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/setting"/>
+            <ImageView
+                android:layout_marginTop="15dp"
+                android:paddingLeft="3dp"
+                android:id="@+id/shopmarket"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/setting"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/shop"/>
+            <ImageView
+
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@+id/shopmarket"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/chat"
+                android:paddingLeft="3dp"/>
+            <TextView
+                android:id="@+id/txtbatdauban"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_light"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="20dp"
+                android:text="Bắt Đầu Bán  >"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_draw_edit_batdauban"/>
+
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:background="@android:color/transparent"
+           android:id="@+id/imageuserthongtin"
+           android:padding="5dp"
+           android:src="@drawable/download"
+           android:layout_marginTop="20dp"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_below="@+id/txtbatdauban"/>
+        <TextView
+            android:id="@+id/txttentaikhoanlogin"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/txtbatdauban"
+            android:layout_toRightOf="@id/imageuserthongtin"
+            android:text="Thaistyle1998"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <Button
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:text="Đơn Mua"
+            android:id="@+id/btndonmuahang"
+            android:drawableLeft="@drawable/file"/>
+
+         <LinearLayout
+             android:layout_margin="5dp"
+             android:background="@android:color/background_light"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <Button
+
+                 android:background="@android:color/background_light"
+                 android:textSize="10sp"
+                 android:drawableTop="@drawable/envelope"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Chờ xác nhận"
+                 />
+             <Button
+                 android:id="@+id/btnlayhang"
+
+                 android:drawableTop="@drawable/shipped"
+                 android:textSize="10sp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:background="@android:color/background_light"
+                 android:text="Chờ lấy hàng"/>
+             <Button
+                 android:id="@+id/btngiaohang"
+
+                 android:drawableTop="@drawable/box"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Đang giao"
+                 android:textSize="10sp"
+                 android:background="@android:color/background_light"/>
+             <Button
+
+
+                 android:drawableTop="@drawable/danhgia"
+                 android:background="@android:color/background_light"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Đánh Giá"
+                 android:textSize="10sp"/>
+
+         </LinearLayout>
+        <Button
+            android:layout_margin="5dp"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:id="@+id/btndathichuser"
+            android:background="@drawable/custom_draw_dang"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Đã thích"
+            android:drawableLeft="@drawable/like"
+            android:paddingLeft="10dp"/>
+        <Button
+            android:layout_margin="5dp"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:textSize="14sp"
+            android:id="@+id/btnmoixemuser"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/custom_draw_dang"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Mới xem"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/clock"/>
+
+    <Button
+        android:layout_margin="5dp"
+        android:drawablePadding="10dp"
+        android:gravity="left"
+        android:textSize="14sp"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/custom_draw_dang"
+        android:text="TShop Xu"
+        android:drawableLeft="@drawable/coin"
+        android:id="@+id/btnshopxuuser"
+        />
+        <Button
+            android:layout_margin="5dp"
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:textSize="14sp"
+            android:layout_marginTop="1dp"
+            android:id="@+id/btndanhgiauser"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:text="Đánh giá của tôi"
+            android:background="@drawable/custom_draw_dang"
+            android:drawableLeft="@drawable/stardanhgia"/>
+
+    <Button
+        android:layout_margin="5dp"
+        android:gravity="left"
+        android:drawablePadding="10dp"
+        android:textSize="14sp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/custom_draw_dang"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Thiết lập tài khoản"
+        android:drawableLeft="@drawable/thietlap"
+        android:paddingLeft="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

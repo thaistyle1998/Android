@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:orientation="vertical"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+                android:scaleType="centerCrop"
+            android:padding="5dp"
+            android:id="@+id/imageviewtimkiem"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="180dp"
+            android:layout_height="180dp" />
+    </FrameLayout>
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:id="@+id/txtten"
+        android:ellipsize="end"
+        android:maxWidth="200dp"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_draw_edit"
+
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="Gương Thần"
+        android:textColor="#0A0A0A"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        />
+    <TextView
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:id="@+id/txtsoluong"
+        android:layout_marginTop="5dp"
+        android:padding="3dp"
+        android:textSize="13sp"
+        android:background="@drawable/custom_draw_edit"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      />
+
+
+</LinearLayout>

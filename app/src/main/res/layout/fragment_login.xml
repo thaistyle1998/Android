@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+android:orientation="vertical"
+    android:background="@android:color/background_light"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="@drawable/custom_background"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:padding="1dp"
+            android:id="@+id/imageviewloginshop"
+            android:layout_marginLeft="240dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/shop"/>
+        <ImageView
+            android:scaleType="centerCrop"
+            android:padding="1dp"
+            android:layout_toRightOf="@+id/imageviewloginshop"
+            android:id="@+id/messagechat"
+            android:layout_marginLeft="20dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/chat"/>
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imagwviewthongtinlogin"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/thongtin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/messagechat"
+            />
+
+        <Button
+            android:id="@+id/btndangnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_below="@+id/imageviewloginshop"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/imagwviewthongtinlogin"
+            android:background="@drawable/custom_draw_dang"
+            android:elevation="5dp"
+            android:padding="2dp"
+            android:text="Đăng nhập"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <Button
+            android:textSize="13sp"
+            android:padding="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Đăng ký"
+            android:background="@drawable/custom_draw_dangku"
+            android:layout_below="@id/imageviewloginshop"
+            android:layout_toRightOf="@id/btndangnhap"/>
+    </RelativeLayout>
+  <Button
+       android:drawablePadding="10dp"
+      android:padding="10dp"
+      android:textColor="#070707"
+      android:gravity="left"
+      android:layout_margin="5dp"
+      android:id="@+id/btndonmua"
+      android:text="Đơn Mua"
+      android:drawableLeft="@drawable/file"
+      android:background="@drawable/custom_draw_dang"
+      android:layout_width="match_parent"
+      android:textSize="13sp"
+      android:drawableRight="@android:drawable/sym_action_call"
+      android:layout_height="40dp" />
+    <Button
+          android:drawablePadding="10dp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textColor="#070707"
+        android:id="@+id/btndathich"
+
+        android:drawableLeft="@drawable/like"
+       android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Đã Thích"
+        android:background="@drawable/custom_draw_dang"/>
+ <Button
+   android:drawablePadding="10dp"
+     android:gravity="left"
+     android:padding="10dp"
+     android:textColor="#070707"
+     android:id="@+id/btnmoixem"
+     android:background="@drawable/custom_draw_dang"
+     android:layout_margin="5dp"
+     android:drawableLeft="@drawable/clock"
+     android:layout_width="match_parent"
+     android:layout_height="40dp"
+     android:text="Mới Xem"
+     />
+    <Button
+
+        android:drawablePadding="10dp"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textColor="#070707"
+     android:layout_margin="5dp"
+ android:id="@+id/btnsopxu"
+        android:drawableLeft="@drawable/coin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="TShop Xu"
+        android:background="@drawable/custom_draw_dang"/>
+
+        <Button
+            android:drawablePadding="10dp"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textColor="#070707"
+            android:id="@+id/btnDanhgia"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/stardanhgia"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Đánh Giá Của Tôi"
+            android:background="@drawable/custom_draw_dang"/>
+    <Button
+        android:padding="10dp"
+        android:gravity="left"
+          android:drawablePadding="10dp"
+        android:id="@+id/btnthietlaptaikhoan"
+        android:textColor="#070707"
+        android:drawableLeft="@drawable/thietlap"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_draw_dang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Thiết Lập Tài Khoản"/>
+</LinearLayout>

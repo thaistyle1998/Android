@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <FrameLayout
+
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/framelayoutdanhmuc">
+        <ImageView
+            android:background="@drawable/custom_draw_imag"
+            android:id="@+id/imageviewdanhmuc"
+            android:padding="2dp"
+            android:layout_margin="3dp"
+            android:scaleType="centerCrop"
+
+            android:layout_width="64dp"
+
+            android:layout_height="64dp" />
+    </FrameLayout>
+    <TextView
+        android:padding="8dp"
+        android:gravity="center"
+        android:id="@+id/txttendanhmuc"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="10sp"
+        android:background="@drawable/custom_draw_edit"
+        android:elevation="5dp"
+        android:textColor="#0A0A0A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thời Trang Nam"
+        android:maxLines="2"
+        />
+
+</LinearLayout>

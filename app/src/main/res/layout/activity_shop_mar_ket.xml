@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearmarket">
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/backstack"
+            android:src="@drawable/left"
+            android:padding="3dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:padding="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giỏ Hàng"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/messagechats"
+            android:layout_marginLeft="150dp"
+            android:padding="3dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/chat"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/checkshipped"
+        android:textColor="@android:color/background_light"
+       android:background="#04DDCA"
+        android:gravity="left"
+        android:text="Bạn nhấn vào đây dể lấy mã miễn phí vận chuyển nhé !"
+        android:drawablePadding="12dp"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/shipped"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/linearmarket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/mattroi"
+        android:background="@drawable/draw_image_icon"
+        android:src="@drawable/back"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/checkshipped"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"/>
+    <Button
+        android:id="@+id/btnmuasam"
+        android:textColor="@android:color/background_light"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mattroi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Mua Sắm Ngay"
+        android:background="@drawable/custom_draw_email"/>
+
+
+</RelativeLayout>

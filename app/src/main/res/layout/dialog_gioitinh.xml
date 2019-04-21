@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nam"
+        android:textSize="20sp"
+        android:background="@drawable/custom_draw_edit"
+        android:padding="10dp"
+        android:id="@+id/nam"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_draw_edit"
+        android:textSize="20sp"
+        android:text="Nữ"
+        android:padding="10dp"
+        android:id="@+id/nu"/>
+
+</LinearLayout>

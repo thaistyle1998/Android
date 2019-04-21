@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/myviewpager">
+
+
+
+    </android.support.v4.view.ViewPager>
+    <me.relex.circleindicator.CircleIndicator
+        android:layout_marginLeft="20dp"
+        android:id="@+id/cidicator"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="120dp"></me.relex.circleindicator.CircleIndicator>
+
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/mylinear">
+        <EditText
+            android:layout_marginTop="3dp"
+            android:elevation="40dp"
+            android:drawableLeft="@android:drawable/ic_search_category_default"
+            android:padding="1dp"
+            android:textSize="14sp"
+            android:background="@drawable/custom_draw_edit"
+            android:layout_weight="4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/timkiem"
+            android:hint="Tìm Kiếm"
+            android:textStyle="bold"
+            android:textColorHint="@android:color/holo_orange_dark"
+            />
+
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/market"
+            style="@style/Theme.AppCompat"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="20dp"
+            android:alpha="1"
+            android:background="@drawable/shop"
+            android:scaleType="fitXY" />
+        <ImageView
+            android:layout_marginTop="2dp"
+            android:id="@+id/imagethongbao"
+            android:layout_marginLeft="20dp"
+
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+
+            android:src="@drawable/alarm"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SettingActivity">
+
+    <RelativeLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:padding="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/left"
+            android:id="@+id/backthietlap"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thiết lập tài khoản"
+            android:layout_toRightOf="@+id/backthietlap"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textColor="@android:color/background_dark"
+            android:id="@+id/txtthietlaptaikhoan"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/chatsetting"
+            android:src="@drawable/chat"
+            android:padding="5dp"/>
+    </RelativeLayout>
+    <TextView
+        android:padding="5dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản"/>
+    <Button
+        android:textSize="13sp"
+        android:layout_margin="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hồ Sơ Của Tôi"
+        android:background="#FCFCF9"
+        android:gravity="left"
+        android:padding="10dp"
+        android:id="@+id/hosocuatoi"/>
+    <Button
+        android:id="@+id/diachi"
+        android:gravity="left"
+        android:layout_margin="3dp"
+        android:background="#FCFCF9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Địa Chỉ"
+        android:padding="10dp"
+        android:textSize="13sp"/>
+
+
+
+</LinearLayout>

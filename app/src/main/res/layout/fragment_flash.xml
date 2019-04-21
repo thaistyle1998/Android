@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/flasg"
+            android:background="@drawable/custom_draw_edit"
+            android:padding="3dp"
+            android:textSize="20sp"
+            android:elevation="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FLASH DEALS"
+            android:textStyle="bold"
+            android:textColor="#E79315"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:padding="3dp"
+            android:background="@drawable/custom_draw_edit"
+            android:textStyle="bold"
+            android:textColor="#0E0E0D"
+            android:id="@+id/timegio"
+            android:layout_toRightOf="@+id/flasg"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+
+            android:textColor="#0E0E0D"
+            android:background="@drawable/custom_draw_edit"
+            android:padding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem Tất Cả >"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycleview"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

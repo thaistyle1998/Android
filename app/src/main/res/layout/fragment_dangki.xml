@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:inputType="number"
+        android:layout_below="@+id/edittentaikhoan"
+        android:textSize="16sp"
+        android:shadowColor="@android:color/holo_blue_dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editsdt"
+        android:textStyle="bold"
+        android:textColor="#090908"
+          android:textColorLink="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Số Điện Thoại"/>
+    <EditText
+        android:inputType="text"
+        android:textSize="16sp"
+        android:shadowColor="@android:color/holo_blue_dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edittentaikhoan"
+        android:textStyle="bold"
+        android:textColor="#090908"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Tên Tài Khoản"/>
+    <EditText
+        android:inputType="textPassword"
+        android:layout_below="@+id/editsdt"
+        android:textSize="16sp"
+        android:shadowColor="@android:color/holo_blue_dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editmatkhau"
+        android:textStyle="bold"
+        android:textColor="#090908"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Mật Khẩu"/>
+    <EditText
+        android:inputType="textPassword"
+        android:layout_below="@+id/editmatkhau"
+        android:textSize="16sp"
+        android:shadowColor="@android:color/holo_blue_dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/editmatkhauhai"
+        android:textStyle="bold"
+        android:textColor="#090908"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập Mật Khẩu"/>
+
+
+    <Button
+
+        android:id="@+id/btntieptuc"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/editmatkhauhai"
+        android:textColor="@android:color/background_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xác Nhận"
+        android:background="@android:color/holo_orange_light"
+        />
+    <LinearLayout
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:padding="3dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="____________________  Đăng ký với   _______________"/>
+        <Button
+            android:paddingLeft="10dp"
+            android:elevation="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+
+            android:drawableLeft="@drawable/emaildangki"
+          android:background="@drawable/custom_draw_email"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/btnemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng kí bằng Email"
+            />
+        <Button
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/facebook"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/custom_edit_fb"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiếp Tục Với FaceBook"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>
